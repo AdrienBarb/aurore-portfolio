@@ -5,8 +5,9 @@
 
 .works-header {
   max-width: 600px;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 2.5rem auto;
   text-align: center;
+  font-weight: 300;
 }
 
 .img1 {
@@ -95,4 +96,32 @@
 #works-image:hover #works-description {
   visibility: visible;
   opacity: 1;
+}
+
+
+@media screen and (max-width: 850px) {
+
+  .works-pictures-container {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+    margin: 0 2rem;
+  }
+
+  .works-wrapper{
+    height: 1800px;
+  }
+
+  #works-image {
+    height: 256px;
+  }
+
 }

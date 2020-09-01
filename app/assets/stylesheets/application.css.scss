@@ -21,5 +21,18 @@
 
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+  font-family: "Helvetica Neue";
+  position: relative;
+
+
+  h2{
+    font-size: 22px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }

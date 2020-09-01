@@ -6,30 +6,36 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body>
+  <body id="home">
 
-    <nav>
-      <div class="nav-bar-left">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#works">My Works</a>
-        <a href="#">Contact</a>
-      </div>
-      <div class="nav-bar-right">
-        <div class="phone-number">
-          <p>Call me:</p>
-          <p class="red-phone-number">+33 (0)6 18 01 86 34</p>
+    <div class="nav-bar-wrapper">
+      <div class="nav-bar">
+        <div class="nav-bar-left">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#works">My Works</a>
+          <a href="#contact">Contact</a>
         </div>
-        <span class="line"></span>
-        <div class="icon">
-          <a href="https://www.linkedin.com/in/aurore-demierre/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto: aurore.demierre@gmail.com"><i class="fas fa-envelope"></i></a>
+        <div class="nav-bar-right">
+          <div class="phone-number">
+            <p>Call me:</p>
+            <p class="red-phone-number">+33 (0)6 18 01 86 34</p>
+          </div>
+          <span class="line"></span>
+          <div class="icon">
+            <a href="https://www.linkedin.com/in/aurore-demierre/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto: aurore.demierre@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
+
       </div>
-    </nav>
+
+    </div>
+
+
 
     <header>
       <div class="about-wrapper" id="about">
@@ -90,7 +96,13 @@
       <div class="works-header">
         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
       </div>
+    </div>
 
+    <div class="contact-wrapper" id="contact">
+      <h2>Contact:</h2>
+      <p>Phone: +33 (0)6 18 01 86 34</p>
+      <p>Email: aurore.demierre@gmail.com</p>
+      <a href="https://www.linkedin.com/in/aurore-demierre/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </div>
 
 

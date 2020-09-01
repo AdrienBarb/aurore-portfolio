@@ -9,7 +9,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6rem 0;
+    padding: 11rem 0;
 
     img {
       width: 300px;
@@ -29,6 +29,37 @@ header {
   p {
     text-align: end;
   }
+}
+
+@media screen and (max-width: 850px) {
+
+  header{
+    .about-wrapper {
+      display: block;
+      text-align: -webkit-center;
+      padding: 2rem 0;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  .about-description {
+
+    margin-bottom: 2rem;
+    margin-right: 0;
+
+
+    h1 {
+      font-size: 76px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
 
 }
 

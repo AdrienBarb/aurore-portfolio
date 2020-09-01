@@ -1,21 +1,32 @@
-nav {
+.nav-bar-wrapper {
+  height: 56px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+
+}
+
+.nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 2rem;
-  height: 56px;
+  width: 96%;
+  margin: 0 auto;
+
 
   .nav-bar-left {
-    width: 40%;
+    width: 406px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
   .nav-bar-right {
-    width: 26%;
+    width: 306px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -49,7 +60,7 @@ nav {
 
     display: flex;
     justify-content: space-between;
-    width: 12%;
+    width: 14%;
 
     a {
       text-decoration: none;
@@ -58,3 +69,16 @@ nav {
     }
   }
 }
+
+@media screen and (max-width: 850px) {
+
+  .nav-bar-wrapper{
+    height: 76px;
+  }
+  .nav-bar {
+    margin-top: 0.5rem;
+    display: block;
+    text-align: -webkit-center;
+  }
+}
+
