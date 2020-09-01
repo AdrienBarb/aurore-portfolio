@@ -1,13 +1,17 @@
-<h1>Modifier un projet</h1>
 
-<%= form_for [:admin, @user, @project] do |f| %>
+<div class="form-wrapper">
+  <div class="form">
+    <h2>Modfier un projet</h2>
 
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+    <%= form_for [:admin, @user, @project] do |f| %>
 
-  <%= f.label :description %>
-  <%= f.text_field :description %>
+      <%= f.text_field :title, placeholder: 'Titre', class: 'form-field' %>
 
-  <%= f.submit "Valider" %>
+      <%= f.text_field :description, placeholder: 'Description', class: 'form-field' %>
 
-<% end %>
+      <%= f.submit "Valider", class: 'valid-button' %>
+
+    <% end %>
+
+  </div>
+</div>

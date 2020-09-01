@@ -1,29 +1,43 @@
-<%= link_to 'Modifier mon profil',  edit_admin_user_path(@user) %>
+<div class="user-show-wrapper">
+  <div class="user-show-top">
+    <h2>Mes informations:</h2>
+    <%= link_to 'Modifier mon profil',  edit_admin_user_path(@user), class: 'classic-button' %>
+  </div>
+  <div class="user-show-info">
+   <ul>
+     <li>
+      <h4>Prénom:</h4>
+      <p><%=@user.first_name  %></p>
+     </li>
+     <li>
+      <h4>Nom: </h4>
+      <p><%=@user.last_name %></p>
+     </li>
+     <li>
+      <h4>Numéro de téléphone:</h4>
+      <p><%=@user.phone_number  %></p>
+     </li>
+     <li>
+      <h4>Titre:</h4>
+      <p><%=@user.title %></p>
+     </li>
+     <li>
+      <h4>Description:</h4>
+      <p><%=@user.description %></p>
+     </li>
+     <li>
+      <h4>Linkedin:</h4>
+      <p><%=@user.url_linkedin %></p>
+     </li>
+      <li>
+        <h4>Instagram:</h4>
+        <p><%=@user.url_instagram %></p>
+     </li>
+      <li>
+        <h4>Facebook:</h4>
+        <p><%=@user.url_facebook %></p>
+     </li>
+   </ul>
+  </div>
+</div>
 
-<h2>Mes informations:</h2>
- <ul>
-   <li>
-    <%=@user.first_name  %>
-   </li>
-   <li>
-    <%=@user.last_name %>
-   </li>
-   <li>
-    <%=@user.phone_number  %>
-   </li>
-   <li>
-    <%=@user.title %>
-   </li>
-   <li>
-    <%=@user.description %>
-   </li>
-   <li>
-     <%=@user.url_linkedin %>
-   </li>
-    <li>
-     <%=@user.url_instagram %>
-   </li>
-    <li>
-     <%=@user.url_facebook %>
-   </li>
- </ul>
