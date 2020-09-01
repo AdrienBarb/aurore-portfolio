@@ -1,10 +1,23 @@
 .contact-wrapper {
   height: 220px;
-  background-color: #FBEFEF;
+  background-color: black;
+  color: white;
   text-align: center;
   padding-top: 1.5rem;
 
   h2 {
     margin-bottom: 2rem;
+  }
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 5%;
+  margin: 0 auto;
+
+  a {
+    color: white;
   }
 }
