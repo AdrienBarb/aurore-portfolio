@@ -1,0 +1,31 @@
+<h1>Modifie tes informations</h1>
+
+<%= form_for [:admin, @user] do |f| %>
+
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :url_linkedin %>
+  <%= f.text_field :url_linkedin %>
+
+  <%= f.label :url_instagram %>
+  <%= f.text_field :url_instagram %>
+
+  <%= f.label :url_facebook %>
+  <%= f.text_field :url_facebook %>
+
+  <%= f.submit "Valider" %>
+
+<% end %>

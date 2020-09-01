@@ -1,0 +1,29 @@
+<%= link_to 'Modifier mon profil',  edit_admin_user_path(@user) %>
+
+<h2>Mes informations:</h2>
+ <ul>
+   <li>
+    <%=@user.first_name  %>
+   </li>
+   <li>
+    <%=@user.last_name %>
+   </li>
+   <li>
+    <%=@user.phone_number  %>
+   </li>
+   <li>
+    <%=@user.title %>
+   </li>
+   <li>
+    <%=@user.description %>
+   </li>
+   <li>
+     <%=@user.url_linkedin %>
+   </li>
+    <li>
+     <%=@user.url_instagram %>
+   </li>
+    <li>
+     <%=@user.url_facebook %>
+   </li>
+ </ul>
