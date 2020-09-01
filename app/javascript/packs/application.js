@@ -17,7 +17,7 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 
-document.querySelectorAll('.nav-bar-left a').forEach(anchor => {
+document.querySelectorAll('.nav-bar-left #anchor-link').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 

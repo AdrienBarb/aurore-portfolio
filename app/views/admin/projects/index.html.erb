@@ -1,0 +1,9 @@
+<%= link_to 'Creer un projet', new_admin_user_project_path(@user)  %>
+
+<% if @projects.any? %>
+  <% @projects.each do |project| %>
+    <p><%= project.description %></p>
+    <%= link_to 'Modifier le projet', edit_admin_user_project_path(@user, project)  %>
+    <%= link_to 'Suprimer le projet', admin_user_project_path(@user, project), data: { confirm: "Etes vous sur?" }, method: :delete %>
+  <% end %>
+<% end %>

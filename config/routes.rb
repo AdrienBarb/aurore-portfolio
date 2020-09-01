@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   namespace :admin do
     root 'application#index'
 
-    resources :users
+    resources :users do
+      resources :projects
+    end
   end
 
 

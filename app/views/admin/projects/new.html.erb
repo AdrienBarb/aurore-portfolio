@@ -1,0 +1,13 @@
+<h1>Crée un projet</h1>
+
+<%= form_for [:admin, @user, @project] do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.submit "Valider" %>
+
+<% end %>
