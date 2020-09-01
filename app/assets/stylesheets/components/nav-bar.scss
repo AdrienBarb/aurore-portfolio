@@ -72,6 +72,8 @@
 
 @media screen and (max-width: 850px) {
 
+
+
   .nav-bar-wrapper{
     height: 76px;
   }
@@ -79,6 +81,10 @@
     margin-top: 0.5rem;
     display: block;
     text-align: -webkit-center;
+
+    .nav-bar-left {
+      width: 312px;
+    }
   }
 }
 
