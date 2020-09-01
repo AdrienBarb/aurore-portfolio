@@ -1,0 +1,35 @@
+header {
+  height: 100vh;
+  background-color: #FBEFEF;
+  margin-bottom: 4rem;
+
+  .about-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+
+    img {
+      width: 300px;
+    }
+  }
+}
+
+.about-description {
+
+  margin-right: 2rem;
+  max-width: min-content;
+
+  h1 {
+    font-size: 96px;
+  }
+
+  p {
+    text-align: end;
+  }
+
+}
+
+

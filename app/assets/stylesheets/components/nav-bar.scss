@@ -1,0 +1,60 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem;
+  height: 56px;
+
+  .nav-bar-left {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav-bar-right {
+    width: 26%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.nav-bar-left {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.nav-bar-right {
+
+  .phone-number {
+    display: flex;
+    font-weight: bold;
+
+    .red-phone-number {
+      color: #D24B4B;
+      margin-left: 0.4rem;
+    }
+  }
+
+  .line {
+    width: 1px;
+    height: 12px;
+    background-color: black;
+  }
+
+  .icon{
+
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+
+    a {
+      text-decoration: none;
+      color: #D24B4B;
+
+    }
+  }
+}
