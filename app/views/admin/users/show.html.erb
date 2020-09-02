@@ -4,7 +4,9 @@
     <%= link_to 'Modifier mon profil',  edit_admin_user_path(@user), class: 'classic-button' %>
   </div>
   <div class="user-show-info">
-    <%= cl_image_tag @user.photo.key, width: 200 %>
+    <% if @user.photo %>
+      <%= cl_image_tag @user.photo.try(:key), width: 200 %>
+    <% end %>
     <div class="user-infos">
      <ul>
        <li>
