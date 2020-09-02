@@ -23,9 +23,10 @@
         <% if @user.projects.any? %>
           <% @user.projects.each_with_index do |project, index| %>
             <div class="work-image">
-              <%= cl_image_tag project.image.key %>
+              <% if project.image %>
+                <%= cl_image_tag project.image.try(:key) %>
+              <% end %>
               <div class="work-description">
-                <h3>What did I do?</h3>
                 <p><%= project.date %></p>
                 <p><%= project.description %></p>
               </div>
