@@ -1,22 +1,22 @@
+<% admins_only do %>
+  <div class="form-wrapper">
+    <div class="form">
+      <h2>Modfier un projet</h2>
 
-<div class="form-wrapper">
-  <div class="form">
-    <h2>Modfier un projet</h2>
+      <%= form_for [:admin, @user, @project] do |f| %>
 
-    <%= form_for [:admin, @user, @project] do |f| %>
+        <%= f.text_field :title, placeholder: 'Titre', class: 'form-field' %>
 
-      <%= f.text_field :title, placeholder: 'Titre', class: 'form-field' %>
+        <%= f.text_field :date, placeholder: 'Date', class: 'form-field' %>
 
-      <%= f.text_field :date, placeholder: 'Date', class: 'form-field' %>
+        <%= f.text_field :description, placeholder: 'Description', class: 'form-field' %>
 
-      <%= f.text_field :description, placeholder: 'Description', class: 'form-field' %>
+        <%= f.label :image %>
+        <%= f.file_field :image %>
 
-      <%= f.label :image %>
-      <%= f.file_field :image %>
+        <%= f.submit "Valider", class: 'valid-button' %>
 
-      <%= f.submit "Valider", class: 'valid-button' %>
-
-    <% end %>
-
+      <% end %>
+    </div>
   </div>
-</div>
+<% end %>
