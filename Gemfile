@@ -58,3 +58,4 @@ gem 'awesome_print', '~> 1.8'
 gem 'devise'
 gem 'pry', '~> 0.10.3'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary', '~> 1.16.0'

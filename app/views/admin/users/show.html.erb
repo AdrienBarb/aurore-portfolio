@@ -38,6 +38,7 @@
         <p><%=@user.url_facebook %></p>
      </li>
    </ul>
+   <%= cl_image_tag @user.photo.key, width: 400 %>
   </div>
 </div>
 
