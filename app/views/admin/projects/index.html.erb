@@ -11,7 +11,13 @@
       <div class="project-card">
         <div class="project-card-left">
           <p>Project #1</p>
-          <p><%= project.description %></p>
+          <div class="project-card-description">
+            <% if project.image %>
+              <%= cl_image_tag project.image.try(:key), width: 200 %>
+            <% end %>
+            <p><%= project.description %></p>
+          </div>
+
         </div>
         <div class="project-card-right">
           <%= link_to 'Modifier le projet', edit_admin_user_project_path(@user, project), class: 'classic-button'  %>

@@ -32,3 +32,12 @@
 .project-card-left {
   max-width: 600px;
 }
+
+.project-card-description {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 1rem;
+  }
+}
