@@ -3,9 +3,10 @@
   margin: 3rem auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   .classic-button {
-    margin-bottom: 1rem;
+    margin: 1rem;
     width: 100%;
   }
 }
