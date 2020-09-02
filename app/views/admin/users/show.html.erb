@@ -1,0 +1,52 @@
+<div class="user-show-wrapper">
+  <div class="user-show-top">
+    <h2>Mes informations:</h2>
+    <%= link_to 'Modifier mon profil',  edit_admin_user_path(@user), class: 'classic-button' %>
+  </div>
+  <div class="user-show-info">
+    <%= cl_image_tag @user.photo.key, width: 200 %>
+    <div class="user-infos">
+     <ul>
+       <li>
+        <h4>Prénom:</h4>
+        <p><%=@user.first_name  %></p>
+       </li>
+       <li>
+        <h4>Nom: </h4>
+        <p><%=@user.last_name %></p>
+       </li>
+       <li>
+        <h4>Numéro de téléphone:</h4>
+        <p><%=@user.phone_number  %></p>
+       </li>
+       <li>
+        <h4>Titre:</h4>
+        <p><%=@user.title %></p>
+       </li>
+       <li>
+        <h4>Profil description:</h4>
+        <p><%=@user.description %></p>
+       </li>
+       <li>
+        <h4>Linkedin:</h4>
+        <p><%=@user.url_linkedin %></p>
+       </li>
+        <li>
+          <h4>Instagram:</h4>
+          <p><%=@user.url_instagram %></p>
+       </li>
+        <li>
+          <h4>Facebook:</h4>
+          <p><%=@user.url_facebook %></p>
+       </li>
+       <li>
+         <h4>Works description:</h4>
+         <p><%= @user.works_description %></p>
+       </li>
+     </ul>
+
+    </div>
+
+  </div>
+</div>
+

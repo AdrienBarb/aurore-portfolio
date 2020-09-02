@@ -1,0 +1,12 @@
+.navigation-admin-menu {
+  max-width: 360px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .classic-button {
+    margin: 1rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+
+<div class="projects-index-wrapper">
+
+  <div class="projects-index-top">
+    <h2>Mes projets:</h2>
+    <%= link_to 'Creer un projet', new_admin_user_project_path(@user), class: 'classic-button'  %>
+  </div>
+
+  <% if @projects.any? %>
+    <% @projects.each do |project| %>
+      <div class="project-card">
+        <div class="project-card-left">
+          <p>Project #1</p>
+          <div class="project-card-description">
+            <% if project.image %>
+              <%= cl_image_tag project.image.try(:key), width: 200 %>
+            <% end %>
+            <p><%= project.description %></p>
+          </div>
+
+        </div>
+        <div class="project-card-right">
+          <%= link_to 'Modifier le projet', edit_admin_user_project_path(@user, project), class: 'classic-button'  %>
+          <%= link_to 'Suprimer le projet', admin_user_project_path(@user, project), data: { confirm: "Etes vous sur?" }, method: :delete, class: 'classic-button' %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+

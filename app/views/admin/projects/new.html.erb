@@ -1,0 +1,20 @@
+
+<div class="form-wrapper">
+  <div class="form">
+    <h2>Crée un projet</h2>
+
+    <%= form_for [:admin, @user, @project] do |f| %>
+
+      <%= f.text_field :title, placeholder: 'Titre', class: 'form-field' %>
+
+      <%= f.text_field :description, placeholder: 'Description', class: 'form-field' %>
+
+      <%= f.label :image %>
+      <%= f.file_field :image %>
+
+      <%= f.submit "Valider", class: 'valid-button' %>
+
+    <% end %>
+
+  </div>
+</div>
