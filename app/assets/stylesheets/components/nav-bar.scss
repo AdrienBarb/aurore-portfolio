@@ -76,8 +76,6 @@
 
 @media screen and (max-width: 850px) {
 
-
-
   .nav-bar-wrapper{
     height: 76px;
   }
@@ -99,5 +97,25 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 450px) {
+
+  .nav-bar-wrapper {
+
+    .nav-bar {
+      padding-top: 1.5rem;
+    }
+
+    .nav-bar-right {
+      display: none;
+    }
+
+    .nav-bar-left {
+      width: 90%;
+    }
+  }
+
+
 }
 

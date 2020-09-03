@@ -63,9 +63,9 @@
 
     <div class="contact-wrapper" id="contact">
       <h2>Contact:</h2>
-      <p>Phone: <%= @user.phone_number %></p>
-      <p>Email: <%= @user.email %></p>
       <div class="social-links">
+        <a href="tel:<%= @user.phone_number %>"><i class="fas fa-phone"></i></a>
+        <a href="mailto:<%= @user.email %>"><i class="fas fa-envelope"></i></a>
         <a href="<%= @user.url_linkedin %>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         <a href="<%= @user.url_instagram %>" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
