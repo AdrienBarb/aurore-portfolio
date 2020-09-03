@@ -88,10 +88,14 @@
           width: 100%;
         }
       }
+    }
+  }
+}
 
+@media screen and (max-width: 450px) {
+  .works-wrapper {
       .work-description {
         font-size: 12px;
       }
-    }
   }
 }
