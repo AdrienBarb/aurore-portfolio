@@ -70,19 +70,27 @@
 
 @media screen and (max-width: 850px) {
 
-  .works-pictures-container {
-    display: flex;
-    flex-direction: column;
-    align-items: none;
-    justify-items: none;
-    grid-gap: 0;
-    grid-template-columns: none;
+  .works-wrapper {
 
-    .work-image {
-      margin-top: 1rem;
+    .works-pictures-container {
+      display: flex;
+      flex-direction: column;
+      align-items: none;
+      justify-items: none;
+      grid-gap: 0;
+      grid-template-columns: none;
 
-      img {
-        width: 100%;
+      .work-image {
+        margin-top: 1rem;
+        display: content;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .work-description {
+        font-size: 12px;
       }
     }
   }
