@@ -17,8 +17,8 @@
           <p> <%= @user.works_description %> </p>
         </div>
         <div class="works-pictures-container">
-          <% if @user.projects.any? %>
-            <% @user.projects.each_with_index do |project, index| %>
+          <% if @projects.any? %>
+            <% @projects.each_with_index do |project, index| %>
               <div class="work-image">
                 <% if project.image %>
                   <%= cl_image_tag project.image.try(:key) %>
@@ -40,7 +40,7 @@
 
             <div class="section-header">
               <p><%= section.description %></p>
-              <a href="<%= section.link %>">Lien instagram</a>
+              <a href="<%= section.link %>" target="_blank">Lien instagram</a>
             </div>
 
             <div class="section-image">
