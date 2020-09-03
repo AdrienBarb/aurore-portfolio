@@ -46,15 +46,12 @@
 
   .phone-number {
     display: flex;
-    color: white!important;
 
-
-
-    .red-phone-number {
-      color: white;
-      margin-left: 0.4rem;
+    p {
       font-weight: bold;
+      color: white!important;
     }
+
   }
 
   .line {
@@ -84,17 +81,22 @@
   .nav-bar-wrapper{
     height: 76px;
   }
+
   .nav-bar {
     margin-top: 0.5rem;
     display: block;
     text-align: -webkit-center;
+  }
 
-    .red-phone-number {
-      color: #F2CD5D;
-    }
+  .nav-bar-left {
+    width: 312px;
+  }
 
-    .nav-bar-left {
-      width: 312px;
+  .nav-bar-right {
+    .phone-number {
+      p {
+        color: white;
+      }
     }
   }
 }
