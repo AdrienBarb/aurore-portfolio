@@ -6,4 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Section.create!(title: 'Instagram', description: 'Lorem ipsum bla bla bla', link: 'https://www.instagram.com/pasfoulebourdon/')
+Section.create!(title: 'Instagram', description: 'Lorem ipsum bla bla bla', link: 'https://www.instagram.com/pasfoulebourdon/', user_id: 1)
