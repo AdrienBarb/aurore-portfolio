@@ -1,0 +1,22 @@
+<% admins_only do %>
+  <div class="form-wrapper">
+    <div class="form">
+      <h2>Ajouter une rubrique</h2>
+
+      <%= form_for [:admin, @section] do |f| %>
+
+        <%= f.text_field :title, placeholder: 'Titre', class: 'form-field' %>
+
+        <%= f.text_area :description, placeholder: 'Description', class: 'form-field' %>
+
+        <%= f.text_field :link, placeholder: 'Lien', class: 'form-field' %>
+
+
+        <%= f.label :images %>
+        <%= f.file_field :images, :multiple => true %>
+
+        <%= f.submit "Valider", class: 'valid-button' %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

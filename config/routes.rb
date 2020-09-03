@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    get 'sections/index'
+  end
   devise_for :users
 
 
@@ -10,6 +13,8 @@ Rails.application.routes.draw do
     resources :users do
       resources :projects
     end
+
+    resources :sections, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   end
 
 

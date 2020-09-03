@@ -1,0 +1,24 @@
+<% admins_only do %>
+
+  <div class="section-show-wrapper">
+
+    <h2><%= @section.title %></h2>
+    <p> <%= @section.description %> </p>
+    <a href="<%= @section.link %>">Lien</a>
+
+    <% if @section.images.any? %>
+      <div class="section-show-images">
+        <% @section.images.each do |image| %>
+          <%= cl_image_tag image.try(:key), width: 200 %>
+        <% end %>
+      </div>
+    <% end %>
+
+    <div class="section-show-link">
+      <%= link_to 'Modifier cette rubrique', edit_admin_section_path(@section), class: 'classic-button'  %>
+      <%= link_to 'Supprimer la rubrique', admin_section_path(@section) , data: { confirm: "Are you sure?" }, method: :delete, class: 'classic-button'  %>
+    </div>
+
+  </div>
+
+<% end %>

@@ -1,0 +1,23 @@
+<% admins_only do %>
+
+<div class="sections-index-wrapper">
+  <div class="sections-index-top">
+
+    <h2>Mes rubriques</h2>
+    <%= link_to 'Ajouter une rubrique', new_admin_section_path, class: 'classic-button'  %>
+
+  </div>
+
+  <div class="sections-index">
+    <% if @sections.any? %>
+      <% @sections.each do |section| %>
+          <%= link_to section.title, admin_section_path(section), class: 'classic-button'  %>
+      <% end %>
+    <% end %>
+  </div>
+
+</div>
+
+
+
+<% end %>

@@ -1,0 +1,33 @@
+.sections-wrapper {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.section-header {
+  max-width: 70%;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+.section-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .section-image {
+    flex-direction: column;
+
+    img {
+      margin-bottom: 0.8rem;
+      width: 60%;
+    }
+  }
+}
