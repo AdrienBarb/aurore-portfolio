@@ -14,7 +14,6 @@
 .work-image {
   position: relative;
   border: 1px solid black;
-  display: flex;
 
   img {
     width: 100%;
@@ -82,7 +81,6 @@
 
       .work-image {
         margin-top: 1rem;
-        display: content;
 
         img {
           width: 100%;
