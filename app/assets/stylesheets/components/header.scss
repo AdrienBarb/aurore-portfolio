@@ -38,35 +38,34 @@ header {
 @media screen and (max-width: 850px) {
 
   header{
+
     .about-wrapper {
       display: block;
       text-align: -webkit-center;
-      padding: 4rem 0;
+      padding: 2rem 0;
 
       img {
         width: 166px;
       }
     }
-  }
 
-  .about-description {
+    .about-description {
 
-    margin-bottom: 2rem;
-    margin-right: 0;
+      margin: 0 0.5rem 2rem 0.5rem;
+      max-width: none;
 
 
-    h1 {
-      font-size: 42px;
-      text-align: center;
+      h1 {
+        font-size: 42px;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 14px;
+      }
     }
-
-    p {
-      text-align: center;
-      font-size: 14px;
-    }
   }
-
-
 }
 
 
