@@ -1,5 +1,5 @@
 class Admin::SectionsController < ApplicationController
-  before_action :set_section, only: [:show, :edit, :update]
+  before_action :set_section, only: [:show, :edit, :update, :destroy]
   before_action :set_user, only: [:new, :create]
 
   def index
@@ -15,7 +15,7 @@ class Admin::SectionsController < ApplicationController
 
   def create
     @section = @user.sections.build(section_params)
-    if @section.save(section_params)
+    if @section.save
       flash[:notice] = "La rubrique a bien été créé"
       redirect_to admin_sections_path
     else
