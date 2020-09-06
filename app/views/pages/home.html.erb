@@ -24,7 +24,7 @@
                   <%= cl_image_tag project.image.try(:key) %>
                 <% end %>
                 <div class="work-description">
-                  <p><%= project.date %></p>
+                  <p class="italic"><%= project.date %></p>
                   <p><%= project.description %></p>
                 </div>
               </div>
@@ -41,7 +41,7 @@
             <div class="section-header">
               <h2><%= section.title %></h2>
               <p><%= section.description %></p>
-              <a href="<%= section.link %>" target="_blank">Lien instagram</a>
+              <a href="<%= section.link %>" target="_blank">Instagram link</a>
             </div>
 
             <div class="section-image">

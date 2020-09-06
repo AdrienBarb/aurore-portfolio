@@ -11,13 +11,14 @@
 
 .user-show-info {
   display: flex;
-  align-items: center;
+  align-items: start;
 
   img {
     margin-right: 1rem;
   }
 
   ul > li {
+
     list-style: none;
     margin-bottom: 0.5rem;
     display: flex;
